@@ -1,0 +1,131 @@
+@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;600;800;900&display=swap);
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.cards {
+  margin: 0 auto;
+  width: 500px;
+  display: grid;
+  grid-template: repeat(6, 231px)/repeat(2, 220px);
+  margin-top: 30px;
+  gap: 40px 30px;
+
+}
+
+.box {
+  width: 220px;
+  height: 231px;
+  display: grid;
+  grid-template: repeat(3, 1fr)/220px;
+  transition: all 1s ease-in-out;
+  align-self: center;
+  justify-self: center;
+}
+
+.text {
+  font-size: 20px;
+  font-weight: 500;
+  color: #2F4F4F;
+  text-align: center;
+  margin: 8px 0 9px 0;
+}
+
+.img {
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+  margin: 0 auto;
+  transition: all 1s ease-in-out;
+  margin-top: 5px;
+}
+
+.box:hover {
+  height: 287px;
+  background: rgb(227, 152, 38);
+  margin-bottom: -47px;
+  transform: scale(1.2);
+  z-index: 1;
+  border-radius: 10px;
+}
+
+
+
+.box:nth-child(1):hover::after {
+  content: "Box";
+  color: white;
+  text-align: center;
+}
+
+.box:nth-child(2):hover::after {
+  content: "Football";
+  color: white;
+  text-align: center;
+}
+
+.box:nth-child(3):hover::after {
+  content: "Football";
+  color: white;
+  text-align: center;
+}
+
+.box:nth-child(4):hover::after {
+  content: "Box";
+  color: white;
+  text-align: center;
+}
+
+.box:nth-child(5):hover::after {
+  content: "Football";
+  color: white;
+  text-align: center;
+}
+
+.box:nth-child(6):hover::after {
+  content: "Basketball";
+  color: white;
+  text-align: center;
+}
+
+.box:nth-child(7):hover::after {
+  content: "Tennis";
+  color: white;
+  text-align: center;
+}
+
+.box:nth-child(8):hover::after {
+  content: "Basketball";
+  color: white;
+  text-align: center;
+}
+
+.box:nth-child(9):hover::after {
+  content: "Rugby";
+  color: white;
+  text-align: center;
+}
+
+.box:nth-child(10):hover::after {
+  content: "Rugby";
+  color: white;
+  text-align: center;
+}
+
+.box:hover .img {
+  border-radius: 60px;
+}
+
+@media (min-width: 1000px) {
+  .cards {
+    width: 1000px;
+    grid-template: repeat(3, 231px)/repeat(4, 220px)
+  }
+}
